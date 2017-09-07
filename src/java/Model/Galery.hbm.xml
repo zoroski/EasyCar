@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 10, 2017 9:55:40 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Galery" table="galery" catalog="rentdatabase" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="Id" />
+            <generator class="identity" />
+        </id>
+        <property name="path" type="string">
+            <column name="Path" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
